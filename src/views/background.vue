@@ -1,10 +1,10 @@
 <script setup>
     const backgroundImg = [
-        '/background/1.jpg',
-        '/background/2.jpg',
-        '/background/3.jpg',
-        '/background/4.jpg',
-        '/background/5.jpg'
+        '/portfolio/background/1.jpg',
+        '/portfolio/background/2.jpg',
+        '/portfolio/background/3.jpg',
+        '/portfolio/background/4.jpg',
+        '/portfolio/background/5.jpg'
     ]
 
     const changeImg = (item) => {

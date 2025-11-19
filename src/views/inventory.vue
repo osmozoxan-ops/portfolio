@@ -13,7 +13,7 @@ export default{
               filled: true,
               idCell: 0,
               figure: 'fish',
-              img: '/pic/riba.png',
+              img: '/portfolio/pic/riba.png',
               summImgHorizon: 3,
               summImgvertical: 1,
               rotate: 90
@@ -22,7 +22,7 @@ export default{
               filled: true,
               idCell: 1,
               figure: 'herb',
-              img: '/pic/herb.png',
+              img: '/portfolio/pic/herb.png',
               summImgHorizon: 2,
               summImgvertical: 1,
               rotate: 0
@@ -40,7 +40,7 @@ export default{
               filled: true,
               idCell: 3,
               figure: 'egg',
-              img: '/pic/egg.png',
+              img: '/portfolio/pic/egg.png',
               summImgHorizon: 1,
               summImgvertical: 1,
               rotate: 0
@@ -114,7 +114,7 @@ export default{
               filled: true,
               idCell: 11,
               figure: 'grenade',
-              img: '/pic/grenade.png',
+              img: '/portfolio/pic/grenade.png',
               summImgHorizon: 2,
               summImgvertical: 1,
               rotate: 0
@@ -197,7 +197,7 @@ export default{
               filled: true,
               idCell: 20,
               figure: 'gun',
-              img: '/pic/gun.png',
+              img: '/portfolio/pic/gun.png',
               summImgHorizon: 3,
               summImgvertical: 2,
               rotate: 0
@@ -224,7 +224,7 @@ export default{
               filled: true,
               idCell: 23,
               figure: 'herbMix',
-              img: '/pic/herbMix.png',
+              img: '/portfolio/pic/herbMix.png',
               summImgHorizon: 2,
               rotate: 90
           },
@@ -741,9 +741,9 @@ export default{
   },
   mounted() {
     this.inventoryBack = this.inventoryRestart;
-    this.rotateSound = new Audio('/sound/rotate.wav');
-    this.pickupSound = new Audio('/sound/pickup.wav');
-    this.dropSound = new Audio('/sound/drop.wav');
+    this.rotateSound = new Audio('/portfolio/sound/rotate.wav');
+    this.pickupSound = new Audio('/portfolio/sound/pickup.wav');
+    this.dropSound = new Audio('/portfolio/sound/drop.wav');
     document.addEventListener('mousemove', e => {
       const Bounds = this.$refs?.inventoryRoot?.getBoundingClientRect?.();
       if(!Bounds){
@@ -853,7 +853,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('/pic/inventory.png') no-repeat center center;
+  background: url('../../public/pic/inventory.png') no-repeat center center;
   background-size: cover;
   width: 520px;
   height: 370px;    

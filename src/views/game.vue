@@ -286,10 +286,10 @@ export default{
           @click="switchFieldValue(indexRow, indexCell, cell.filled, cell.idCell)"
         > 
           <div v-if="cell.value === 'X'">
-            <img src="/public/tic_tac_toe/cross.png" alt="X">
+            <img src="../../public/tic_tac_toe/cross.png" alt="X">
           </div>
           <div v-else-if="cell.value === 'O'">
-            <img src="/public/tic_tac_toe/zero.png" alt="O">
+            <img src="../../public/tic_tac_toe/zero.png" alt="O">
           </div>
         </div>
       </div>

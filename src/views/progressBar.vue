@@ -85,7 +85,7 @@ const incrementCounter = () => {
 
         <image 
           v-show="imgProgressBar === 'warning' || imgProgressBar === 'error' || (imgProgressBar === 'check' && success)"
-          :href="`/${imgProgressBar}.svg`"
+          :href="`/portfolio/progress_bar/${imgProgressBar}.svg`"
           x="75" 
           y="75" 
           width="50" 
@@ -140,7 +140,7 @@ const incrementCounter = () => {
 
         <image 
           v-show="imgProgressBar === 'warning' || imgProgressBar === 'error' || (imgProgressBar === 'check' && success)"
-          :href="`/progress_bar/${imgProgressBar}.svg`"
+          :href="`/portfolio/progress_bar/${imgProgressBar}.svg`"
           x="75" 
           y="75" 
           width="50" 

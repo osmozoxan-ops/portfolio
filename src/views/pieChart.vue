@@ -259,7 +259,7 @@ input:focus, select:focus{
   width: 25px;
   height: 25px;
   right: 10px;
-  background-image: url(/arrow.svg);
+  background-image: url(../../public/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;

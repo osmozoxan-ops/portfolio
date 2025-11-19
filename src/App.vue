@@ -21,7 +21,7 @@ let myApp = ref([{
     flag: false,
     id: 0,
     z: 0,
-    img: '/public/icons/background.png',
+    img: '/portfolio/icons/background.png',
     text: 'Обои'
   },
   {
@@ -32,7 +32,7 @@ let myApp = ref([{
     flag: false,
     id: 1,
     z: 0,
-    img: '/public/icons/cros.png',
+    img: '/portfolio/icons/cros.png',
     text: 'Крестики нолики'
   },
   {
@@ -43,7 +43,7 @@ let myApp = ref([{
     flag: false,
     id: 2,
     z: 0,
-    img: '/public/icons/re4.png',
+    img: '/portfolio/icons/re4.png',
     text: 'Инвентарь'
   },
   {
@@ -54,7 +54,7 @@ let myApp = ref([{
     flag: false,
     id: 3,
     z: 0,
-    img: '/public/icons/progress.svg',
+    img: '/portfolio/icons/progress.svg',
     text: 'Прогресс бар'
   },
   {
@@ -65,7 +65,7 @@ let myApp = ref([{
     flag: false,
     id: 4,
     z: 0,
-    img: '/public/icons/pie.svg',
+    img: '/portfolio/icons/pie.svg',
     text: 'Диаграмма'
   }
 ])
@@ -153,7 +153,7 @@ onMounted(() => {
   // Подписываемся на события мыши
   document.addEventListener('mousemove', handleMouseMove)
   document.addEventListener('mouseup', handleMouseUp)
-  document.body.style.backgroundImage = `url(/background/1.jpg)`
+  document.body.style.backgroundImage = `url(/portfolio/background/1.jpg)`
 })
 </script>
 
@@ -177,8 +177,8 @@ onMounted(() => {
     :style="{left: `${i.x}px`, top: `${i.y}px`, width: `${i.width}px`, height: `${i.height}px`, zIndex: `${i.z}`}">
     <div @mousedown="handleMouseDown($event, i.id)" ref="windowTop" class="window-top w-full h-[40px] bg-blue-500 absolute top-0 cursor-move z-1">
         <ul class="flex items-center h-full justify-end p-2 gap-2">
-          <img @click="bottomBar.push({id: i.id, flag: i.flag, img: i.img}); i.flag = !i.flag" class="cursor-pointer h-full w-6 flex justify-center items-bottom hover:bg-white/20" src="/public/iconsWindow/remove.png" alt="">
-          <img @click="i.flag = !i.flag" class="cursor-pointer flex justify-center items-center hover:bg-red-500 transition ease-in-out" src="/public/iconsWindow/close.png" alt="">
+          <img @click="bottomBar.push({id: i.id, flag: i.flag, img: i.img}); i.flag = !i.flag" class="cursor-pointer h-full w-6 flex justify-center items-bottom hover:bg-white/20" src="../public/iconsWindow/remove.png" alt="">
+          <img @click="i.flag = !i.flag" class="cursor-pointer flex justify-center items-center hover:bg-red-500 transition ease-in-out" src="../public/iconsWindow/close.png" alt="">
         </ul>
     </div>
 
